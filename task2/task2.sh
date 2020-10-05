@@ -17,5 +17,8 @@ echo '4^6 + 5^3'
 if [ $NUMBER_ONE -gt $NUMBER_TWO] 
 then
     echo $NUMBER_ONE 'IS LARGER'
+elif [$NUMBER_ONE = $NUMBER_TWO] 
+then 
+    echo 'THEY ARE THE SAME' 
 else
-    echo $NUMBER_TWO 'IS LARGER OR THEY ARE THE SAME'
+    echo NUMBER TWO'IS LARGER'
