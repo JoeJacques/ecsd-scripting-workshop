@@ -16,12 +16,24 @@ add()
     echo $[$1 + $2]
 }
 
-add
+
 
 subtract() {
-    local $1
+    local $1 
     local $2 
     return $[$1 - $1]
 }
 
-subtract
+
+# Recersive Function 
+
+recersive() { 
+    if (($1 <= 1)); then
+        echo 1 
+    else
+        factor=$(recersive $(( $i - 1 )))
+        echo $(($i * factor))
+    fi 
+}
+
+recersive 10
