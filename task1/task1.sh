@@ -1,13 +1,24 @@
-#!/bin/zsh 
+#!/bin/sh
 
 
-let name = 'Joe Jacques'
-let shell_var = $SHELLOPTS 
+#1 Define a Varable 
 
-echo shell_var
+name = 'Joe Jacques'
+
+#2 Define a varable with special characters
 
 echo 'Hello /$ how are you /! doing today /{ ' 
 
-touch " my/$specialfile" > echo 'file created' 
+#3 Pass $SHELLOPTS Enviromnet variable and echo it. 
 
-rm "my/$specialfile" | echo 'file removed' 
+echo $1
+
+#4 Create a file with special characters using a shell command 
+
+#5 remove the file with the special characters
+
+touch my\specialfile\'\' 
+echo 'file added'  
+
+rm my\specialfile\'\' 
+echo 'file removed' 
