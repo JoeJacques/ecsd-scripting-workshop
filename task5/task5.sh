@@ -4,7 +4,7 @@
 # Create a while loop that asks for a password from a user. 
 
 password='123456'
-attempts='0'
+attempts=0
 
 #1 Create a while loop that requests a password from a user. 
 
