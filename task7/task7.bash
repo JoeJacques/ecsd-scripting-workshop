@@ -13,7 +13,7 @@ add()
 {
     local $1
     local $2
-    echo $[$1 + $2]
+    echo $(($1 + $2))
 }
 
 
@@ -21,7 +21,7 @@ add()
 subtract() {
     local $1 
     local $2 
-    return $[$1 - $1]
+    echo $(($1 - $1))
 }
 
 
@@ -36,4 +36,3 @@ recersive() {
     fi 
 }
 
-recersive 5
