@@ -31,9 +31,9 @@ recersive() {
     if (($1 <= 1)); then
         echo 1 
     else
-        factor=$(recersive $(( $i - 1 )))
-        echo $(($i * factor))
+        factor=$(recersive $(( $1 - 1 )))
+        echo $(($1 * $factor))
     fi 
 }
 
-recersive 10
+recersive 5
