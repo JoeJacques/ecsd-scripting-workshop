@@ -2,16 +2,25 @@
 
 # Create a script that has three consitions and 3 diffrent exit codes. 
 
-if [ $1 < $2]; then 
+if (( $1 > $2)); then 
    echo 'CONDITION MET' 
-   exit 1;
+   exit 66;
+fi 
 
 mkdir Test
-if [$Test]; then 
+if (($1 < $2)); then 
    echo 'condition unmet'
    exit 0;
+fi
 
+if (($1)); then 
+   echo 'Hello Joe' 
+   exit 12;
+fi
 
-if [22 > 44]; then 
-echo 'Hello Joe' 
-exit 12;
+#  Add cron expression 
+
+crontab -e 
+ 0 12 * * *  ./Users/joejacques/Documents/ECS Training/scripting /ecsd-scripting-workshop/task3/task3.sh
+:wq!
+crontab -l
