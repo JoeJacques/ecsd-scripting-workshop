@@ -1,14 +1,15 @@
 #!/bin/sh
 
+# wc -w 
 
+time_now=$(date +%H)
+senetence=
 
-time_now = $((date +%H:%M)
-if [[ "$time_now" > "12:00" ] || "$time_now < "1:00"]]; then 
+if (( "$time_now" >= "12" )) && (($time_now < "14")); then 
   echo 'TIME FOR LUNCH'
 else 
-  echo 'LUCNH TIME IS OVER'
+  echo 'LUNCH TIME IS OVER'
 fi 
 
-
-
+if (())
 
