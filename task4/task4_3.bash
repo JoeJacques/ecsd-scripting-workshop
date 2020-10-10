@@ -2,10 +2,11 @@
 
 # Task 3 
 
-echo 'Enter File Name'
+echo 'Enter File Name:' 
 read filename
 
 count=$( wc -w < $filename)
+
 if [ "$count" -gt 20 ]; then
 echo file length is "$count" words long
 fi
@@ -19,7 +20,9 @@ case $character in
 2) echo 'Today menu is Veg'
 ;;
 3) echo 'Todays menu is Fruit'
+;;
 *) echo 'invalid selection '
+;;
 esac
 
 
