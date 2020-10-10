@@ -17,8 +17,8 @@ echo $1
 
 #5 remove the file with the special characters
 
-touch my\specialfile\'file\' 
-echo 'file added'  
+# touch my\specialfile\'file\' 
+# echo 'file added'  
 
 rm  my\specialfile\'file\' 
 echo 'file removed'
