@@ -17,10 +17,10 @@ echo $((4**6 + 5**3));
 
 #4 Create a simple if statement; checks if two numbers are the same, bigger or smaller. 
 
-if [$NUMBER_ONE -gt $NUMBER_TWO]
+if [$number_one -gt $number_two]
 then
-    echo $NUMBER_ONE 'IS LARGER'
-elif [$NUMBER_ONE -lt $NUMBER_TWO]
+    echo Number one IS LARGER
+elif [$number_one -lt $number_two]
 then 
     echo 'THEY ARE THE SAME' 
 else
